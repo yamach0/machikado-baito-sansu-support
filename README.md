@@ -1,1 +1,6 @@
-# machikado-baito-sansu-support
+# まちかどバイト算数 サポート
+
+アプリ「まちかどバイト算数」のサポートページとプライバシーポリシーです。GitHub Pages で公開しています。
+
+- サポート: index.html
+- プライバシーポリシー: privacy.html
