@@ -4,3 +4,5 @@
 
 - サポート: index.html
 - プライバシーポリシー: privacy.html
+- 英語のサポート: en.html
+- 英語のプライバシーポリシー: privacy-en.html
