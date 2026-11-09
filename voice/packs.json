@@ -2,10 +2,10 @@
   "packs": [
     {
       "lang": "en",
-      "version": 2,
-      "url": "https://yamach0.github.io/machikado-baito-sansu-support/voice/en-2.zip",
-      "size": 49669282,
-      "sha256": "44282cfcd81b7c1db79da416e3fc4375f22cf865bec28ce61f35b7ecab1db42e"
+      "version": 3,
+      "url": "https://yamach0.github.io/machikado-baito-sansu-support/voice/en-3.zip",
+      "size": 48768370,
+      "sha256": "af12d12eb4c40887203818ce11d0f32e3a4371c11225a723db90609b8209e047"
     }
   ]
 }
