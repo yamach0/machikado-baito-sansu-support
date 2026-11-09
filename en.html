@@ -3,51 +3,237 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Town Job Math Support</title>
-<link rel="stylesheet" href="style.css">
+<title>Town Job Math | Learn elementary math by working at the shops in town</title>
+<meta name="description" content="Help out at 14 shops in a little town, from the Onigiri Shop to the Airport, and practice elementary school math from addition to fractions and speed. For iPhone and iPad. No ads, no data collected.">
+<link rel="alternate" hreflang="ja" href="https://yamach0.github.io/machikado-baito-sansu-support/">
+<link rel="alternate" hreflang="en" href="https://yamach0.github.io/machikado-baito-sansu-support/en.html">
+<link rel="alternate" hreflang="x-default" href="https://yamach0.github.io/machikado-baito-sansu-support/en.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Town Job Math">
+<meta property="og:description" content="Learn elementary school math while working part-time jobs at the shops in town.">
+<meta property="og:image" content="https://yamach0.github.io/machikado-baito-sansu-support/img/og-en.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="app_icon.png">
+<link rel="apple-touch-icon" href="app_icon.png">
+<script src="lang.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="stylesheet" href="lp.css">
 </head>
 <body>
-<main>
-<header>
-  <img src="app_icon.png" alt="">
-  <div>
-    <h1>Town Job Math</h1>
-    <div class="muted">Learn elementary school math while working part-time jobs at the shops in town</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="app_icon.png" alt="">Town Job Math</a>
+    <nav aria-label="On this page">
+      <a href="#play">How to play</a>
+      <a href="#learn">What kids learn</a>
+      <a href="#safe">For parents</a>
+      <a href="#price">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#support">Contact</a>
+    </nav>
+    <a class="lang" href="./" data-lang="ja" hreflang="ja">日本語</a>
   </div>
 </header>
 
-<div class="card">
-  <p>For feedback or bug reports, please email us at the address below. It helps if you tell us your device (iPhone, iPad or Mac) and which screen the problem happened on.</p>
-  <p><strong>Contact:</strong> <a href="mailto:machikado.baito.sansu@gmail.com">machikado.baito.sansu@gmail.com</a></p>
+<main id="top">
+
+<!-- First view -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1><span class="en-title">Town Job Math</span></h1>
+      <p class="lead">Work part-time jobs around town.<br>Learn math while you help out.</p>
+      <p>Count onigiri orders, read the clock at the train station, measure fractions at the cake shop. Kids practice elementary school math by helping the friendly animals who run the shops in town.</p>
+      <ul class="chips">
+        <li>Ages 6–12</li>
+        <li>14 shops, 14 math topics</li>
+        <li>No ads</li>
+        <li>No data collected</li>
+        <li>4 shops free</li>
+      </ul>
+      <div class="cta">
+        <a class="btn" href="#price">See pricing</a>
+        <a class="btn ghost" href="#play">How to play</a>
+        <div class="soon">For iPhone and iPad. Coming soon to the App Store (Android version in the works).</div>
+      </div>
+    </div>
+    <div>
+      <div class="phone"><img src="img/en/town.webp" width="1519" height="702" alt="The town map with the Onigiri Shop, Station, Flower Shop and more"></div>
+      <div class="cast" aria-hidden="true">
+        <img src="img/chars/granny.webp" alt=""><img src="img/chars/beaver.webp" alt=""><img src="img/chars/bear.webp" alt=""><img src="img/chars/hen.webp" alt=""><img src="img/chars/owl.webp" alt=""><img src="img/chars/octopus.webp" alt=""><img src="img/chars/cow.webp" alt=""><img src="img/chars/seagull.webp" alt="">
+      </div>
+    </div>
+  </div>
 </div>
 
-<h2>FAQ</h2>
-<dl>
-  <dt>Does it cost anything?</dt>
-  <dd>The download is free. The first 4 shops, from the Onigiri Shop to the Bakery, are free to play. The other 10 shops, from the Station to the Airport, open with a one-time purchase called "Full Town" (shops open one by one as you pass the shop before). There are no subscriptions and no ads.</dd>
+<!-- How to play -->
+<section id="play">
+  <div class="wrap">
+    <h2>How to play</h2>
+    <p class="sub">Each job is 10 problems and takes just a few minutes, so it's easy to fit into a busy day.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="phone small"><img src="img/en/town.webp" width="1519" height="702" loading="lazy" alt="The town map"></div>
+        <h3>Pick a shop on the town map</h3>
+        <p>Go into a shop with a "Hiring!" sign. Once you've passed a shop, you can take on its harder ★2 and ★3 jobs too.</p>
+      </div>
+      <div class="step">
+        <div class="phone small"><img src="img/en/briefing.webp" width="1519" height="702" loading="lazy" alt="The bakery owner explains the job"></div>
+        <h3>Hear about the job from the owner</h3>
+        <p>The animal shop owners explain what the job is about, with voice.</p>
+      </div>
+      <div class="step">
+        <div class="phone small"><img src="img/en/shift.webp" width="1519" height="702" loading="lazy" alt="Answering how many onigiri a customer ordered"></div>
+        <h3>Answer the customers' questions</h3>
+        <p>Get 8 out of 10 right to pass. Stuck? Tap "Help!" for an explanation with pictures.</p>
+      </div>
+      <div class="step">
+        <div class="phone small"><img src="img/en/pass.webp" width="1519" height="702" loading="lazy" alt="Passing a job and earning pay"></div>
+        <h3>Enjoy the town with your pay</h3>
+        <p>Spend your coins on tools and decorations for the town. Each pass opens the next shop, all the way to the Airport.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <dt>Can my child buy it by accident?</dt>
-  <dd>The App Store asks for Face ID, Touch ID or your password before any purchase. With Family Sharing's "Ask to Buy", a child can't buy without a parent's approval. Before the purchase screen, the app asks the child to show it to a grown-up.</dd>
+<!-- What kids learn -->
+<section id="learn" class="alt">
+  <div class="wrap">
+    <h2>What kids learn</h2>
+    <p class="sub">Each new shop takes the math one step further. It starts with addition, and the final shop, the Airport, mixes everything together.</p>
 
-  <dt>What happens to my purchase on a new device or after reinstalling?</dt>
-  <dd>With the same Apple Account, go to "My Record" on the town map, then "About Full Town", and tap "Restore purchase". You won't be charged again. "Full Town" also works with Family Sharing, so your family's devices can use it too.</dd>
+    <p class="group-title">Free shops <span class="tag free">Free</span></p>
+    <ul class="shops">
+      <li><img src="img/chars/granny.webp" alt=""><div><b>Onigiri Shop</b><span>Addition</span></div></li>
+      <li><img src="img/chars/beaver.webp" alt=""><div><b>Warehouse</b><span>Subtraction</span></div></li>
+      <li><img src="img/chars/bear.webp" alt=""><div><b>Flower Shop</b><span>Multiplication (times tables)</span></div></li>
+      <li><img src="img/chars/hen.webp" alt=""><div><b>Bakery</b><span>Division</span></div></li>
+    </ul>
 
-  <dt>Can I move my progress to another device?</dt>
-  <dd>Progress is saved on the device. If you upload it from the "iCloud" button at the top right of the title screen, you can download it on another device, or after reinstalling, and carry on (you need to be signed in to iCloud with the same Apple Account). Progress that hasn't been uploaded is lost if you delete the app.</dd>
+    <p class="group-title">Full Town shops <span class="tag full">Full Town</span></p>
+    <ul class="shops">
+      <li><img src="img/chars/owl.webp" alt=""><div><b>Station</b><span>Telling time and elapsed time</span></div></li>
+      <li><img src="img/chars/sheep.webp" alt=""><div><b>Craft Shop</b><span>Length (reading a tape measure)</span></div></li>
+      <li><img src="img/chars/octopus.webp" alt=""><div><b>Fish Shop</b><span>Weight (reading a scale)</span></div></li>
+      <li><img src="img/chars/penguin.webp" alt=""><div><b>Post Office</b><span>Adding lengths and reading a table</span></div></li>
+      <li><img src="img/chars/squirrel.webp" alt=""><div><b>Stationery Shop</b><span>Decimals</span></div></li>
+      <li><img src="img/chars/cow.webp" alt=""><div><b>Cake Shop</b><span>Fractions</span></div></li>
+      <li><img src="img/chars/panda.webp" alt=""><div><b>Supermarket</b><span>Money and making change</span></div></li>
+      <li><img src="img/chars/lion.webp" alt=""><div><b>Gas Station</b><span>Multiplying decimals (with a calculator)</span></div></li>
+      <li><img src="img/chars/cheetah.webp" alt=""><div><b>Delivery Center</b><span>Speed, time and distance</span></div></li>
+      <li><img src="img/chars/seagull.webp" alt=""><div><b>Airport</b><span>Final review (big numbers, fractions and more)</span></div></li>
+    </ul>
 
-  <dt>How can I see how my child is doing?</dt>
-  <dd>"My Record" on the town map shows how many shops have been passed, the number of right answers for each topic, and recent mistakes.</dd>
+    <div class="shots">
+      <figure><div class="phone small"><img src="img/en/clock.webp" width="1519" height="702" loading="lazy" alt="Reading a clock at the station"></div><figcaption>Station: read the clock and work out how long until the train comes</figcaption></figure>
+      <figure><div class="phone small"><img src="img/en/scale.webp" width="1519" height="702" loading="lazy" alt="Reading a scale at the fish shop"></div><figcaption>Fish Shop: read the scale and figure out the price</figcaption></figure>
+      <figure><div class="phone small"><img src="img/en/fraction.webp" width="1519" height="702" loading="lazy" alt="A fraction problem at the cake shop"></div><figcaption>Cake Shop: adding fractions</figcaption></figure>
+    </div>
 
-  <dt>What are the trophies (Game Center)?</dt>
-  <dd>Trophies are awards you get for passing shops and more. They are recorded only when the device is signed in to Game Center. You can play the whole game without signing in.</dd>
+    <div class="extras">
+      <div class="card"><div class="ico">⭐</div><h3>Three levels: ★1 to ★3</h3><p>Every shop gets a little harder with each star, like moving up a grade. Pass one star to open the next.</p></div>
+      <div class="card"><div class="ico">💡</div><h3>"Help!" explains the idea</h3><p>Pictures show the thinking behind each problem, like "groups of the same size" for multiplication and "sharing equally" for division.</p></div>
+      <div class="card"><div class="ico">🔁</div><h3>Review your mistakes</h3><p>"My Record" keeps recently missed problems, so kids can practice similar ones again.</p></div>
+    </div>
+  </div>
+</section>
 
-  <dt>Is there voice in English?</dt>
-  <dd>The English version is text only for now. The Japanese version has full voice.</dd>
-</dl>
+<!-- For parents -->
+<section id="safe">
+  <div class="wrap">
+    <h2>Peace of mind for parents</h2>
+    <p class="sub">Made so kids can play on their own and parents don't have to worry.</p>
+    <div class="cards">
+      <div class="card"><div class="ico">🚫</div><h3>No ads</h3><p>There are no ads at all, and the app never opens outside websites.</p></div>
+      <div class="card"><div class="ico">🔒</div><h3>No personal data collected</h3><p>We don't collect names, email addresses or usage data. Progress is saved on the device.</p></div>
+      <div class="card"><div class="ico">💳</div><h3>One-time purchase, nothing more</h3><p>No subscriptions and no loot boxes. The only purchase is "Full Town", and you buy it once.</p></div>
+      <div class="card"><div class="ico">👨‍👩‍👧</div><h3>No surprise purchases</h3><p>The App Store asks for Face ID, Touch ID or your password before any purchase, and Family Sharing's "Ask to Buy" works too.</p></div>
+      <div class="card"><div class="ico">🔊</div><h3>Voiced characters</h3><p>The characters read their lines aloud. English voices are downloaded the first time you use them.</p></div>
+      <div class="card"><div class="ico">📊</div><h3>See how your child is doing</h3><p>"My Record" shows shops passed, right answers for each topic, and recently missed problems.</p></div>
+    </div>
+  </div>
+</section>
 
-<nav>
-  <a href="privacy-en.html">Privacy Policy</a> · <a href="index.html">日本語</a>
-</nav>
+<!-- Pricing -->
+<section id="price" class="alt">
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <p class="sub">Try it free first. If your child likes it, unlock the whole town.</p>
+    <div class="plans">
+      <div class="plan">
+        <div class="name">Free</div>
+        <div class="price">$0</div>
+        <ul>
+          <li>4 shops: Onigiri Shop, Warehouse, Flower Shop, Bakery</li>
+          <li>Addition, subtraction, multiplication, division</li>
+          <li>★1–★3 levels, "Help!" and My Record</li>
+        </ul>
+      </div>
+      <div class="plan featured">
+        <div class="name">Full Town (one-time purchase)</div>
+        <div class="price">$6.99 <small>once</small></div>
+        <ul>
+          <li>Adds 10 shops from the Station to the Airport (14 in all)</li>
+          <li>Time, length, weight, decimals, fractions, speed and more</li>
+          <li>Play all the way to the ending</li>
+          <li>Works with Family Sharing</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Full Town shops open one by one as you pass the shop before. Price shown is for the US App Store; it varies by country.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details><summary>What age is it for?</summary>
+        <p>The first shop starts with simple addition that a 6-year-old can do. Later shops cover fractions, decimals and speed, so it's best for ages 6 to 12 (elementary school).</p></details>
+      <details><summary>Does it cost anything?</summary>
+        <p>The download is free. The first 4 shops, from the Onigiri Shop to the Bakery, are free to play. The other 10 shops, from the Station to the Airport, open with a one-time purchase called "Full Town" (shops open one by one as you pass the shop before). There are no subscriptions and no ads.</p></details>
+      <details><summary>Can my child buy it by accident?</summary>
+        <p>The App Store asks for Face ID, Touch ID or your password before any purchase. With Family Sharing's "Ask to Buy", a child can't buy without a parent's approval. Before the purchase screen, the app asks the child to show it to a grown-up.</p></details>
+      <details><summary>Which devices does it run on?</summary>
+        <p>iPhone and iPad. It also runs on Mac computers with Apple silicon. An Android version is in the works.</p></details>
+      <details><summary>Does it work offline?</summary>
+        <p>Yes, once the English voices are downloaded. The app only goes online to download voices, to upload or download progress with iCloud, for purchases and for Game Center.</p></details>
+      <details><summary>What happens to my purchase on a new device or after reinstalling?</summary>
+        <p>With the same Apple Account, go to "My Record" on the town map, then "About Full Town", and tap "Restore purchase". You won't be charged again. "Full Town" also works with Family Sharing, so your family's devices can use it too.</p></details>
+      <details><summary>Can I move my progress to another device?</summary>
+        <p>Progress is saved on the device. If you upload it from the "iCloud" button at the top right of the title screen, you can download it on another device, or after reinstalling, and carry on (you need to be signed in to iCloud with the same Apple Account). Progress that hasn't been uploaded is lost if you delete the app.</p></details>
+      <details><summary>How can I see how my child is doing?</summary>
+        <p>"My Record" on the town map shows how many shops have been passed, the number of right answers for each topic, and recent mistakes.</p></details>
+      <details><summary>What are the trophies (Game Center)?</summary>
+        <p>Trophies are awards you get for passing shops and more. They are recorded only when the device is signed in to Game Center. You can play the whole game without signing in.</p></details>
+      <details><summary>Which languages are there?</summary>
+        <p>English and Japanese. The app uses English unless the device is set to Japanese, and you can switch any time from "言語 / Language" on the title screen. English voices are downloaded the first time you use them; the Japanese voices are built in.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="support" class="alt">
+  <div class="wrap support">
+    <h2>Contact</h2>
+    <p>For feedback or bug reports, please email us at the address below. It helps if you tell us your device (iPhone, iPad or Mac) and which screen the problem happened on.</p>
+    <p class="mail"><a href="mailto:machikado.baito.sansu@gmail.com">machikado.baito.sansu@gmail.com</a></p>
+  </div>
+</section>
+
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© Town Job Math</span>
+    <a href="privacy-en.html">Privacy Policy</a>
+    <a href="#support">Contact</a>
+    <a href="./" data-lang="ja" hreflang="ja">日本語</a>
+  </div>
+</footer>
 </body>
 </html>
