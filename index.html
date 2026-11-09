@@ -3,48 +3,234 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>まちかどバイト算数 サポート</title>
-<link rel="stylesheet" href="style.css">
+<title>まちかどバイト算数 ｜ 町のお店でアルバイトしながら算数をおぼえるゲーム</title>
+<meta name="description" content="おにぎり屋、駅、ケーキ工房…町の14のお店でアルバイトをしながら、たし算から分数・速さまで小学校の算数を楽しく練習できる iPhone・iPad 向けゲーム。広告なし・データ収集なし。">
+<link rel="alternate" hreflang="ja" href="https://yamach0.github.io/machikado-baito-sansu-support/">
+<link rel="alternate" hreflang="en" href="https://yamach0.github.io/machikado-baito-sansu-support/en.html">
+<link rel="alternate" hreflang="x-default" href="https://yamach0.github.io/machikado-baito-sansu-support/en.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="まちかどバイト算数">
+<meta property="og:description" content="町のお店でアルバイトをしながら、小学校の算数をおぼえるゲーム。">
+<meta property="og:image" content="https://yamach0.github.io/machikado-baito-sansu-support/img/og-ja.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="app_icon.png">
+<link rel="apple-touch-icon" href="app_icon.png">
+<script src="lang.js"></script>
+<link rel="stylesheet" href="lp.css">
 </head>
 <body>
-<main>
-<header>
-  <img src="app_icon.png" alt="">
-  <div>
-    <h1>まちかどバイト算数</h1>
-    <div class="muted">町のお店でアルバイトをしながら、小学校の算数をおぼえるゲーム</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="app_icon.png" alt="">まちかどバイト算数</a>
+    <nav aria-label="ページ内">
+      <a href="#play">遊び方</a>
+      <a href="#learn">学べる内容</a>
+      <a href="#safe">安心ポイント</a>
+      <a href="#price">料金</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#support">お問い合わせ</a>
+    </nav>
+    <a class="lang" href="en.html" data-lang="en" hreflang="en">English</a>
   </div>
 </header>
 
-<div class="card">
-  <p>ご意見・不具合のご連絡は、下のメールアドレスまでお送りください。お使いの端末（iPhone・iPad・Mac）と、どの画面で何が起きたかを書いていただけると助かります。</p>
-  <p><strong>お問い合わせ：</strong><a href="mailto:machikado.baito.sansu@gmail.com">machikado.baito.sansu@gmail.com</a></p>
+<main id="top">
+
+<!-- ファーストビュー -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1><img src="img/title_logo.webp" width="900" height="360" alt="まちかどバイト算数"></h1>
+      <p class="lead">町のお店でアルバイト。<br>はたらきながら、算数がわかる。</p>
+      <p>おにぎり屋さんの注文を数えたり、駅で電車の時刻を読んだり、ケーキ工房で分数をはかったり。町の人たちを手伝いながら、小学校で習う算数を楽しく練習できるゲームです。</p>
+      <ul class="chips">
+        <li>小学1〜6年生</li>
+        <li>14のお店・14の単元</li>
+        <li>広告なし</li>
+        <li>データ収集なし</li>
+        <li>4店は無料</li>
+      </ul>
+      <div class="cta">
+        <a class="btn" href="#price">料金を見る</a>
+        <a class="btn ghost" href="#play">遊び方</a>
+        <div class="soon">iPhone・iPad 向け。App Store で近日配信予定です（Android 版は準備中）。</div>
+      </div>
+    </div>
+    <div>
+      <div class="phone"><img src="img/ja/town.webp" width="1519" height="702" alt="町の地図。おにぎり屋や駅、花屋などのお店がならんでいる"></div>
+      <div class="cast" aria-hidden="true">
+        <img src="img/chars/granny.webp" alt=""><img src="img/chars/beaver.webp" alt=""><img src="img/chars/bear.webp" alt=""><img src="img/chars/hen.webp" alt=""><img src="img/chars/owl.webp" alt=""><img src="img/chars/octopus.webp" alt=""><img src="img/chars/cow.webp" alt=""><img src="img/chars/seagull.webp" alt="">
+      </div>
+    </div>
+  </div>
 </div>
 
-<h2>よくある質問</h2>
-<dl>
-  <dt>お金はかかりますか？</dt>
-  <dd>ダウンロードは無料です。おにぎり屋からパン屋までの 4 つのお店は無料で遊べます。駅から空港までの残り 10 店は、買い切りの「完全版」を一度買うと遊べます（お店は順番に合格すると開きます）。月額料金や広告はありません。</dd>
+<!-- 遊び方 -->
+<section id="play">
+  <div class="wrap">
+    <h2>遊び方</h2>
+    <p class="sub">1回のアルバイトは10問。数分で終わるので、すきま時間にも続けやすい長さです。</p>
+    <div class="steps">
+      <div class="step">
+        <div class="phone small"><img src="img/ja/town.webp" width="1519" height="702" loading="lazy" alt="町の地図"></div>
+        <h3>町の地図でお店をえらぶ</h3>
+        <p>「ぼしゅう中」の看板が出ているお店に入ります。合格したお店では、★2・★3のむずかしい仕事にも挑戦できます。</p>
+      </div>
+      <div class="step">
+        <div class="phone small"><img src="img/ja/briefing.webp" width="1519" height="702" loading="lazy" alt="パン屋の店長が仕事を説明する画面"></div>
+        <h3>店長から仕事の説明を聞く</h3>
+        <p>動物の店長たちが、どんな仕事をするのかを声つきで教えてくれます。</p>
+      </div>
+      <div class="step">
+        <div class="phone small"><img src="img/ja/shift.webp" width="1519" height="702" loading="lazy" alt="おにぎり屋で注文の数を答える画面"></div>
+        <h3>お客さんの注文に答える</h3>
+        <p>10問中8問正解で合格。わからないときは「教えて！」で、絵を使った説明が見られます。</p>
+      </div>
+      <div class="step">
+        <div class="phone small"><img src="img/ja/pass.webp" width="1519" height="702" loading="lazy" alt="合格してバイト代をもらう画面"></div>
+        <h3>バイト代で町を楽しむ</h3>
+        <p>もらったコインで道具を買ったり、町をかざったり。合格すると次のお店がひらき、最後は空港へ。</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <dt>子どもがまちがって買ってしまいませんか？</dt>
-  <dd>購入するときは、App Store が Face ID・Touch ID・パスワードで確認します。ファミリー共有の「承認と購入のリクエスト」を使うと、保護者の承認なしには購入できません。</dd>
+<!-- 学べる内容 -->
+<section id="learn" class="alt">
+  <div class="wrap">
+    <h2>学べる内容</h2>
+    <p class="sub">お店がひとつ進むごとに、単元も少しずつ先へ。たし算から始まり、最後の空港ではそれまでの総まとめに挑戦します。</p>
 
-  <dt>機種変更やアプリの入れ直しで、購入はどうなりますか？</dt>
-  <dd>同じ Apple アカウントなら、町の地図の「がんばり記録」→「完全版について」にある「購入を復元」で取り戻せます。もう一度お金がかかることはありません。「完全版」はファミリー共有にも対応しているので、家族の端末でも使えます。</dd>
+    <p class="group-title">無料で遊べるお店 <span class="tag free">無料</span></p>
+    <ul class="shops">
+      <li><img src="img/chars/granny.webp" alt=""><div><b>おにぎり屋</b><span>たし算</span></div></li>
+      <li><img src="img/chars/beaver.webp" alt=""><div><b>倉庫</b><span>ひき算</span></div></li>
+      <li><img src="img/chars/bear.webp" alt=""><div><b>花屋</b><span>かけ算（九九）</span></div></li>
+      <li><img src="img/chars/hen.webp" alt=""><div><b>パン屋</b><span>わり算</span></div></li>
+    </ul>
 
-  <dt>遊んだ記録は引き継げますか？</dt>
-  <dd>遊んだ記録は端末の中に保存しています。タイトル画面の右上の「iCloud」から、記録を iCloud にアップロードしておくと、別の端末やアプリの入れ直しのあとにダウンロードして続きから遊べます（同じ Apple アカウントで iCloud にサインインしている必要があります）。アップロードしていない記録は、アプリを削除すると消えます。</dd>
+    <p class="group-title">完全版で遊べるお店 <span class="tag full">完全版</span></p>
+    <ul class="shops">
+      <li><img src="img/chars/owl.webp" alt=""><div><b>駅</b><span>時こくと時間（時計を読む）</span></div></li>
+      <li><img src="img/chars/sheep.webp" alt=""><div><b>手芸屋</b><span>長さ（メジャーを読む）</span></div></li>
+      <li><img src="img/chars/octopus.webp" alt=""><div><b>魚屋</b><span>重さ（はかりを読む）</span></div></li>
+      <li><img src="img/chars/penguin.webp" alt=""><div><b>郵便局</b><span>長さの合計と表の読み取り</span></div></li>
+      <li><img src="img/chars/squirrel.webp" alt=""><div><b>文房具屋</b><span>小数</span></div></li>
+      <li><img src="img/chars/cow.webp" alt=""><div><b>ケーキ工房</b><span>分数</span></div></li>
+      <li><img src="img/chars/panda.webp" alt=""><div><b>スーパー</b><span>お金の計算とおつり</span></div></li>
+      <li><img src="img/chars/lion.webp" alt=""><div><b>ガソリンスタンド</b><span>小数のかけ算（電卓も使う）</span></div></li>
+      <li><img src="img/chars/cheetah.webp" alt=""><div><b>配達センター</b><span>速さ・時間・道のり</span></div></li>
+      <li><img src="img/chars/seagull.webp" alt=""><div><b>空港</b><span>総まとめ（大きな数・分数など）</span></div></li>
+    </ul>
 
-  <dt>子どもの進み具合を見るには？</dt>
-  <dd>町の地図の「がんばり記録」で、合格したお店の数、単元ごとの正解の数、最近まちがえた問題を見られます。</dd>
+    <div class="shots">
+      <figure><div class="phone small"><img src="img/ja/clock.webp" width="1519" height="702" loading="lazy" alt="駅で時計を読んで答える問題"></div><figcaption>駅：時計を読んで、電車が来るまでの時間を答える</figcaption></figure>
+      <figure><div class="phone small"><img src="img/ja/scale.webp" width="1519" height="702" loading="lazy" alt="魚屋ではかりを読む問題"></div><figcaption>魚屋：はかりの目もりを読んで、値段を出す</figcaption></figure>
+      <figure><div class="phone small"><img src="img/ja/fraction.webp" width="1519" height="702" loading="lazy" alt="ケーキ工房の分数の問題"></div><figcaption>ケーキ工房：分数のたし算。学校と同じく分母から書けます</figcaption></figure>
+    </div>
 
-  <dt>トロフィー（Game Center）とは？</dt>
-  <dd>お店で合格したときなどにもらえる記念のトロフィーです。端末で Game Center にサインインしているときだけ記録されます。サインインしていなくても、ゲームはすべて遊べます。</dd>
-</dl>
+    <div class="extras">
+      <div class="card"><div class="ico">⭐</div><h3>★1〜★3の3段階</h3><p>同じお店でも、★が上がるごとに学年が進むように少しずつむずかしくなります。ひとつ下の★に合格すると、次の★がひらきます。</p></div>
+      <div class="card"><div class="ico">💡</div><h3>「教えて！」で考え方がわかる</h3><p>かけ算は「同じ数のまとまり」、わり算は「同じ数ずつ分ける」など、絵を使って考え方を説明します。</p></div>
+      <div class="card"><div class="ico">🔁</div><h3>まちがえた問題をおさらい</h3><p>「がんばり記録」に最近まちがえた問題が残り、同じような問題をもう一度練習できます。</p></div>
+    </div>
+  </div>
+</section>
 
-<nav>
-  <a href="privacy.html">プライバシーポリシー</a> ・ <a href="en.html">English</a>
-</nav>
+<!-- 安心ポイント -->
+<section id="safe">
+  <div class="wrap">
+    <h2>安心ポイント</h2>
+    <p class="sub">お子さんがひとりで遊んでも安心できるように作っています。</p>
+    <div class="cards">
+      <div class="card"><div class="ico">🚫</div><h3>広告なし</h3><p>広告は一切表示しません。アプリから外部のウェブサイトを開くこともありません。</p></div>
+      <div class="card"><div class="ico">🔒</div><h3>個人情報を集めません</h3><p>名前やメールアドレス、利用状況などを開発者が集めることはありません。遊んだ記録は端末の中に保存されます。</p></div>
+      <div class="card"><div class="ico">💴</div><h3>買い切りで追加料金なし</h3><p>月額料金やガチャはありません。お金がかかるのは「完全版」を一度買うときだけです。</p></div>
+      <div class="card"><div class="ico">👨‍👩‍👧</div><h3>勝手に買えないしくみ</h3><p>購入には App Store の Face ID・Touch ID・パスワードが必要です。ファミリー共有の「承認と購入のリクエスト」にも対応しています。</p></div>
+      <div class="card"><div class="ico">🔤</div><h3>ふりがなと声つき</h3><p>問題やセリフの漢字にはふりがなが付き、キャラクターが声で読み上げます。まだ漢字が読めない子でも遊べます。</p></div>
+      <div class="card"><div class="ico">📊</div><h3>おうちの人も進み具合を見られる</h3><p>「がんばり記録」で、合格したお店の数や単元ごとの正解数、最近まちがえた問題を確認できます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section id="price" class="alt">
+  <div class="wrap">
+    <h2>料金</h2>
+    <p class="sub">まずは無料で遊んでみて、気に入ったら完全版へ。</p>
+    <div class="plans">
+      <div class="plan">
+        <div class="name">無料版</div>
+        <div class="price">0円</div>
+        <ul>
+          <li>おにぎり屋・倉庫・花屋・パン屋の4店</li>
+          <li>たし算・ひき算・かけ算・わり算</li>
+          <li>★1〜★3、「教えて！」、がんばり記録</li>
+        </ul>
+      </div>
+      <div class="plan featured">
+        <div class="name">完全版（買い切り）</div>
+        <div class="price">980円 <small>税込・一度だけ</small></div>
+        <ul>
+          <li>駅から空港までの10店が追加（全14店）</li>
+          <li>時計・長さ・重さ・小数・分数・速さなど</li>
+          <li>エンディングまで遊べます</li>
+          <li>ファミリー共有で家族の端末でも使えます</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">完全版のお店は、ひとつ前のお店に合格すると順番にひらきます。価格は日本の App Store のものです。</p>
+  </div>
+</section>
+
+<!-- よくある質問 -->
+<section id="faq">
+  <div class="wrap">
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details><summary>何歳から遊べますか？</summary>
+        <p>最初のおにぎり屋のたし算は小学1年生から遊べます。お店が進むと分数や速さなど高学年の内容も出てくるので、小学1〜6年生が目安です。ふりがなと声があるので、低学年でもひとりで遊べます。</p></details>
+      <details><summary>お金はかかりますか？</summary>
+        <p>ダウンロードは無料です。おにぎり屋からパン屋までの4つのお店は無料で遊べます。駅から空港までの残り10店は、買い切りの「完全版」を一度買うと遊べます（お店は順番に合格すると開きます）。月額料金や広告はありません。</p></details>
+      <details><summary>子どもがまちがって買ってしまいませんか？</summary>
+        <p>購入するときは、App Store が Face ID・Touch ID・パスワードで確認します。ファミリー共有の「承認と購入のリクエスト」を使うと、保護者の承認なしには購入できません。</p></details>
+      <details><summary>どの端末で遊べますか？</summary>
+        <p>iPhone と iPad で遊べます。Apple シリコン搭載の Mac でも動きます。Android 版は準備中です。</p></details>
+      <details><summary>インターネットにつながっていなくても遊べますか？</summary>
+        <p>はい。日本語の声もアプリに入っているので、オフラインで遊べます。通信するのは、iCloud への記録のアップロード・ダウンロード、購入、Game Center、英語の声のダウンロードのときだけです。</p></details>
+      <details><summary>機種変更やアプリの入れ直しで、購入はどうなりますか？</summary>
+        <p>同じ Apple アカウントなら、町の地図の「がんばり記録」→「完全版について」にある「購入を復元」で取り戻せます。もう一度お金がかかることはありません。「完全版」はファミリー共有にも対応しているので、家族の端末でも使えます。</p></details>
+      <details><summary>遊んだ記録は引き継げますか？</summary>
+        <p>遊んだ記録は端末の中に保存しています。タイトル画面の右上の「iCloud」から、記録を iCloud にアップロードしておくと、別の端末やアプリの入れ直しのあとにダウンロードして続きから遊べます（同じ Apple アカウントで iCloud にサインインしている必要があります）。アップロードしていない記録は、アプリを削除すると消えます。</p></details>
+      <details><summary>子どもの進み具合を見るには？</summary>
+        <p>町の地図の「がんばり記録」で、合格したお店の数、単元ごとの正解の数、最近まちがえた問題を見られます。</p></details>
+      <details><summary>トロフィー（Game Center）とは？</summary>
+        <p>お店で合格したときなどにもらえる記念のトロフィーです。端末で Game Center にサインインしているときだけ記録されます。サインインしていなくても、ゲームはすべて遊べます。</p></details>
+      <details><summary>英語でも遊べますか？</summary>
+        <p>はい。端末の言語が日本語以外のときは英語で表示されます。タイトル画面の「言語 / Language」から切り替えることもできます。英語の声は、使うときにダウンロードします。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section id="support" class="alt">
+  <div class="wrap support">
+    <h2>お問い合わせ</h2>
+    <p>ご意見・不具合のご連絡は、下のメールアドレスまでお送りください。お使いの端末（iPhone・iPad・Mac）と、どの画面で何が起きたかを書いていただけると助かります。</p>
+    <p class="mail"><a href="mailto:machikado.baito.sansu@gmail.com">machikado.baito.sansu@gmail.com</a></p>
+  </div>
+</section>
+
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© まちかどバイト算数</span>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="#support">お問い合わせ</a>
+    <a href="en.html" data-lang="en" hreflang="en">English</a>
+  </div>
+</footer>
 </body>
 </html>
