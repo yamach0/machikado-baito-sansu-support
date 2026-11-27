@@ -19,6 +19,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<meta name="apple-itunes-app" content="app-id=6820797295">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Town Job Math","operatingSystem":"iOS, iPadOS","applicationCategory":"EducationalApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"inLanguage":["ja","en"],"downloadUrl":"https://apps.apple.com/app/id6820797295","image":"https://yamach0.github.io/machikado-baito-sansu-support/app_icon.png"}
+</script>
 <link rel="stylesheet" href="lp.css">
 </head>
 <body>
@@ -27,6 +31,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><img src="app_icon.png" alt="">Town Job Math</a>
     <nav aria-label="On this page">
+      <a href="#features">Features</a>
       <a href="#play">How to play</a>
       <a href="#learn">What kids learn</a>
       <a href="#safe">For parents</a>
@@ -49,6 +54,9 @@
       <p>Count onigiri orders, read the clock at the train station, measure fractions at the cake shop. Kids practice elementary school math by helping the friendly animals who run the shops in town.</p>
       <ul class="chips">
         <li>Ages 6–12</li>
+        <li>🔊 Fully voiced</li>
+        <li>🌏 English &amp; Japanese</li>
+        <li>📱 Portrait or landscape</li>
         <li>14 shops, 14 math topics</li>
         <li>No ads</li>
         <li>No data collected</li>
@@ -61,14 +69,46 @@
         <div class="soon">For iPhone and iPad. Available now on the App Store (Android version in the works).</div>
       </div>
     </div>
-    <div>
-      <div class="phone"><img src="img/en/town.webp" width="1519" height="702" alt="The town map with the Onigiri Shop, Station, Flower Shop and more"></div>
+    <div class="hero-visual">
+      <div class="phone tall video">
+        <video id="pv" src="video/preview-en.mp4" poster="img/en/poster.webp" width="480" height="1040" autoplay muted loop playsinline preload="metadata" aria-label="Gameplay video"></video>
+        <button type="button" class="sound" id="pv-sound" aria-pressed="false">🔊 Hear the voices</button>
+      </div>
       <div class="cast" aria-hidden="true">
         <img src="img/chars/granny.webp" alt=""><img src="img/chars/beaver.webp" alt=""><img src="img/chars/bear.webp" alt=""><img src="img/chars/hen.webp" alt=""><img src="img/chars/owl.webp" alt=""><img src="img/chars/octopus.webp" alt=""><img src="img/chars/cow.webp" alt=""><img src="img/chars/seagull.webp" alt="">
       </div>
     </div>
   </div>
 </div>
+
+<!-- Features -->
+<section id="features" class="alt">
+  <div class="wrap">
+    <h2>Three things kids love</h2>
+    <p class="sub">Made so kids pick up math naturally while they play.</p>
+    <div class="features">
+      <div class="feature">
+        <div class="ico">🔊</div>
+        <h3>Every character talks</h3>
+        <p>All lines from the shop owners and customers are voiced, so kids who are still learning to read can play on their own.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🌏</div>
+        <h3>English and Japanese</h3>
+        <p>Switch anytime on the "言語 / Language" screen. In Japanese mode the characters speak Japanese too, so kids can try a second language along with math.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">📱</div>
+        <h3>Portrait or landscape</h3>
+        <p>Hold your iPhone or iPad upright or sideways. The screen adjusts, so kids can play however is comfortable.</p>
+      </div>
+    </div>
+    <div class="orient">
+      <figure><div class="phone tall small"><img src="img/en/portrait.webp" width="540" height="1177" loading="lazy" alt="Portrait screen: counting onigiri at the Onigiri Shop"></div><figcaption>Portrait</figcaption></figure>
+      <figure class="wide"><div class="phone small"><img src="img/en/shift.webp" width="1519" height="702" loading="lazy" alt="Landscape screen: answering an order at the Onigiri Shop"></div><figcaption>Landscape</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <!-- How to play -->
 <section id="play">
@@ -237,5 +277,18 @@
     <a href="./" data-lang="ja" hreflang="ja">日本語</a>
   </div>
 </footer>
+<div class="sticky-cta"><a class="btn" href="https://apps.apple.com/app/id6820797295">Download free on the App Store</a></div>
+<script>
+(function () {
+  var v = document.getElementById('pv'), b = document.getElementById('pv-sound');
+  if (!v || !b) return;
+  b.addEventListener('click', function () {
+    v.muted = !v.muted;
+    if (!v.muted) { v.currentTime = 0; v.play(); }
+    b.setAttribute('aria-pressed', String(!v.muted));
+    b.textContent = v.muted ? '🔊 Hear the voices' : '🔇 Mute';
+  });
+})();
+</script>
 </body>
 </html>

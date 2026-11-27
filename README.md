@@ -9,3 +9,4 @@
 - 言語の自動切り替え: lang.js（一度えらんだ言語 → なければブラウザの言語。日本語以外は英語）
 - 画像: img/ja, img/en（ゲーム画面。本体リポジトリの MachikadoUnity/Tools/layout-preview で横向き 2532×1170 を 0.6 倍で撮影）、img/chars（キャラクター）、img/og-*.png（SNS 用）
 - 英語の声のデータ: voice/
+- 紹介動画: video/preview-ja.mp4, preview-en.mp4（App Store のプレビュー動画を幅480に縮小）。ポスター画像は img/*/poster.webp、縦向き画面は img/*/portrait.webp
