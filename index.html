@@ -19,6 +19,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<meta name="apple-itunes-app" content="app-id=6820797295">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"まちかどバイト算数","operatingSystem":"iOS, iPadOS","applicationCategory":"EducationalApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"inLanguage":["ja","en"],"downloadUrl":"https://apps.apple.com/app/id6820797295","image":"https://yamach0.github.io/machikado-baito-sansu-support/app_icon.png"}
+</script>
 <link rel="stylesheet" href="lp.css">
 </head>
 <body>
@@ -27,6 +31,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><img src="app_icon.png" alt="">まちかどバイト算数</a>
     <nav aria-label="ページ内">
+      <a href="#features">特長</a>
       <a href="#play">遊び方</a>
       <a href="#learn">学べる内容</a>
       <a href="#safe">安心ポイント</a>
@@ -49,6 +54,9 @@
       <p>おにぎり屋さんの注文を数えたり、駅で電車の時刻を読んだり、ケーキ工房で分数をはかったり。町の人たちを手伝いながら、小学校で習う算数を楽しく練習できるゲームです。</p>
       <ul class="chips">
         <li>小学1〜6年生</li>
+        <li>🔊 声つき</li>
+        <li>🌏 日本語・英語</li>
+        <li>📱 縦でも横でも</li>
         <li>14のお店・14の単元</li>
         <li>広告なし</li>
         <li>データ収集なし</li>
@@ -61,14 +69,46 @@
         <div class="soon">iPhone・iPad 向け。App Store で配信中です（Android 版は準備中）。</div>
       </div>
     </div>
-    <div>
-      <div class="phone"><img src="img/ja/town.webp" width="1519" height="702" alt="町の地図。おにぎり屋や駅、花屋などのお店がならんでいる"></div>
+    <div class="hero-visual">
+      <div class="phone tall video">
+        <video id="pv" src="video/preview-ja.mp4" poster="img/ja/poster.webp" width="480" height="1040" autoplay muted loop playsinline preload="metadata" aria-label="ゲームの紹介動画"></video>
+        <button type="button" class="sound" id="pv-sound" aria-pressed="false">🔊 声を聞く</button>
+      </div>
       <div class="cast" aria-hidden="true">
         <img src="img/chars/granny.webp" alt=""><img src="img/chars/beaver.webp" alt=""><img src="img/chars/bear.webp" alt=""><img src="img/chars/hen.webp" alt=""><img src="img/chars/owl.webp" alt=""><img src="img/chars/octopus.webp" alt=""><img src="img/chars/cow.webp" alt=""><img src="img/chars/seagull.webp" alt="">
       </div>
     </div>
   </div>
 </div>
+
+<!-- 特長 -->
+<section id="features" class="alt">
+  <div class="wrap">
+    <h2>3つの特長</h2>
+    <p class="sub">遊びながら、自然に算数が身につくように作りました。</p>
+    <div class="features">
+      <div class="feature">
+        <div class="ico">🔊</div>
+        <h3>キャラクターがしゃべる</h3>
+        <p>店長やお客さんのセリフは、ぜんぶ声つき。漢字にはふりがなも付くので、字を読むのが苦手な子でもひとりで遊べます。</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🌏</div>
+        <h3>日本語と英語で遊べる</h3>
+        <p>「言語 / Language」でいつでも切り替えられます。英語のときは、キャラクターも英語でしゃべります。算数といっしょに英語にもふれられます。</p>
+      </div>
+      <div class="feature">
+        <div class="ico">📱</div>
+        <h3>縦でも横でも遊べる</h3>
+        <p>iPhone・iPad を縦に持っても横に持っても、画面がそのまま合わせます。ソファでも机でも、遊びやすい向きでどうぞ。</p>
+      </div>
+    </div>
+    <div class="orient">
+      <figure><div class="phone tall small"><img src="img/ja/portrait.webp" width="540" height="960" loading="lazy" alt="縦向きの画面。駅で時計を読む問題"></div><figcaption>縦向き</figcaption></figure>
+      <figure class="wide"><div class="phone small"><img src="img/ja/shift.webp" width="1519" height="702" loading="lazy" alt="横向きの画面。おにぎり屋で注文の数を答える問題"></div><figcaption>横向き</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <!-- 遊び方 -->
 <section id="play">
@@ -237,5 +277,18 @@
     <a href="en.html" data-lang="en" hreflang="en">English</a>
   </div>
 </footer>
+<div class="sticky-cta"><a class="btn" href="https://apps.apple.com/app/id6820797295">App Store で無料ダウンロード</a></div>
+<script>
+(function () {
+  var v = document.getElementById('pv'), b = document.getElementById('pv-sound');
+  if (!v || !b) return;
+  b.addEventListener('click', function () {
+    v.muted = !v.muted;
+    if (!v.muted) { v.currentTime = 0; v.play(); }
+    b.setAttribute('aria-pressed', String(!v.muted));
+    b.textContent = v.muted ? '🔊 声を聞く' : '🔇 音を消す';
+  });
+})();
+</script>
 </body>
 </html>
